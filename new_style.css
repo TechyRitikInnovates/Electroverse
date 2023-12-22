@@ -165,28 +165,29 @@
 #venu {
   width: 100%;
   background-color: #0e131f;
-  height: 90vh;
+  height: auto;
 }
 
 #gallery {
   width: 100%;
-  height: 140vh;
   background-color: #0e131f;
+  height: auto;
 }
 
 #faq {
   width: 100%;
+  height: auto;
   background-color: #0e131f;
 }
 
 #footer {
   width: 100%;
-  height: 15vh;
+  
 }
 
 #testimonal {
   width: 100%;
-  height: 15vh;
+  height: auto;
 }
 
 .responsive-map-container {
