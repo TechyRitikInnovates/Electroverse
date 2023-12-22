@@ -210,15 +210,6 @@
   height: 60vh;
 }
 
-@media (max-width: 768px) {
-  .responsive-map-container {
-    height: 35vh;
-  }
-  #iframe_map {
-    height: 35vh;
-  }
-}
-
 #default-tab {
   justify-content: center;
 }
