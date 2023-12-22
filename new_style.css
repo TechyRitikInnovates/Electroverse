@@ -1,3 +1,4 @@
+
 .bg {
   background-image: url(star.jpg);
   width: 100%;
@@ -130,6 +131,7 @@
 
 .waviy {
   position: relative;
+  display: inline-block;
 }
 .waviy span {
   position: relative;
@@ -141,6 +143,7 @@
   animation: flip 2s infinite;
   animation-delay: calc(0.2s * var(--i));
 }
+
 @keyframes flip {
   0%,
   80% {
