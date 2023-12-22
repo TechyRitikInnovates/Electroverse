@@ -114,10 +114,10 @@
 
 @media (max-width: 768px) {
   .responsive-map-container {
-    height: auto;
+    height: 35vh;
   }
   #iframe_map {
-    height: auto;
+    height: 35vh;
   }
 }
 
@@ -165,7 +165,7 @@
 #venu {
   width: 100%;
   background-color: #0e131f;
-  height: auto;
+  height: 110vh;
 }
 
 #gallery {
