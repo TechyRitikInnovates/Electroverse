@@ -114,7 +114,7 @@
 
 @media (max-width: 768px) {
   .responsive-map-container {
-    height: 35vh;
+    height: auto;
   }
   #iframe_map {
     height: auto;
