@@ -202,7 +202,7 @@
 
 .responsive-map-container {
   position: relative;
-  height: 80vh;
+  height: 70vh;
   overflow: hidden;
 }
 
@@ -247,4 +247,8 @@ h4{
 
 #gallery_images img{
   height: auto;
+}
+
+#tabs ul li a{
+  font-size: 1.3rem;
 }
