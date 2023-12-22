@@ -158,7 +158,8 @@
 }
 
 #timeline {
-  width: 90%;
+  background-color: #0e131f;
+  width: 100%;
   height: auto;
   background-color: #0e131f;
 }
@@ -214,4 +215,9 @@
 
 #tabs {
   background-color: #0e131f;
+}
+
+#text-center{
+  display: relative;
+  width: 90%;
 }
