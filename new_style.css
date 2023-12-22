@@ -114,7 +114,7 @@
     height: 35vh;
   }
   #iframe_map {
-    /* height: 35vh; */
+    height: 35vh;
   }
   #venu {
     height: 50vh;
@@ -178,6 +178,13 @@
   overflow: hidden;
 }
 
+#domains{
+  width: 100%;
+  background-color: #0e131f;
+  height: auto;
+  overflow: hidden;
+}
+
 #faq {
   width: 100%;
   height: auto;
@@ -220,4 +227,12 @@
 #text-center{
   display: relative;
   width: 90%;
+}
+
+#domain_text{
+  padding-top: 1em;
+}
+
+#timeline_text{
+  padding-top: 1em;
 }
