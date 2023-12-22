@@ -250,9 +250,7 @@
       <section class="text-gray-400 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="text-center">
-            <h2 class="text-4xl font-black mb-8">
-              About Us
-            </h2>
+            <h2 class="text-4xl font-black mb-8">About Us</h2>
           </div>
           <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
             <p class="leading-relaxed text-lg" style="font-size: 1.5rem">
@@ -273,12 +271,7 @@
     <!-- domains -->
     <section id="domains">
       <div class="text-center">
-        <h2
-          class="text-4xl font-black mb-8"
-          id="domain_text"
-        >
-          Domains
-        </h2>
+        <h2 class="text-4xl font-black mb-8" id="domain_text">Domains</h2>
       </div>
       <section
         class="text-gray-400 body-font"
@@ -402,12 +395,7 @@
     <!-- timeline -->
     <section id="timeline">
       <div class="text-center">
-        <h2
-          class="text-4xl font-black mb-8"
-          id="timeline_text"
-        >
-          Timeline
-        </h2>
+        <h2 class="text-4xl font-black mb-8" id="timeline_text">Timeline</h2>
       </div>
       <div class="container1">
         <div
@@ -524,15 +512,20 @@
       <div class="text-center">
         <br />
         <br />
-        <h2 class="text-4xl font-black mb-8">
-          Event Venue
-        </h2>
+        <h2 class="text-4xl font-black mb-8">Event Venue</h2>
       </div>
       <div class="responsive-map-container">
-        <iframe
+        <!-- <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.983463068894!2d72.83328527520504!3d19.064464682137718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c91130392c07%3A0x3c47bf391c8de931!2sThadomal%20Shahani%20Engineering%20College!5e0!3m2!1sen!2sin!4v1703082739975!5m2!1sen!2sin"
           id="iframe_map"
-        ></iframe>
+        ></iframe> -->
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            class="embed-responsive-item"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.983463068894!2d72.83328527520504!3d19.064464682137718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c91130392c07%3A0x3c47bf391c8de931!2sThadomal%20Shahani%20Engineering%20College!5e0!3m2!1sen!2sin!4v1703082739975!5m2!1sen!2sin"
+            allowfullscreen
+          ></iframe>
+        </div>
       </div>
     </section>
     <hr />
@@ -542,9 +535,7 @@
     <section id="gallery">
       <div class="container px-5 py-6 mx-auto">
         <div class="text-center">
-          <h2 class="text-4xl font-black mb-8">
-            TECH-A-THON'22
-          </h2>
+          <h2 class="text-4xl font-black mb-8">TECH-A-THON'22</h2>
         </div>
         <section class="text-gray-400 body-font">
           <div class="container px-5 py-10 mx-auto">
@@ -591,8 +582,15 @@
           class="relative w-full"
           data-carousel="slide"
         >
-          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+          <div
+            class="relative h-56 overflow-hidden rounded-lg"
+            style="height: 30em"
+          >
+            <div
+              class="hidden duration-700 ease-in-out"
+              data-carousel-item
+              id="gallery_images"
+            >
               <img
                 src="./gate.jpg"
                 class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
@@ -818,10 +816,7 @@
                 style="background-color: #0e131f"
               >
                 <div class="text-center">
-                  <h2
-                    class="text-4xl font-black mb-8"
-                    style="padding-top: 1em"
-                  >
+                  <h2 class="text-4xl font-black mb-8" style="padding-top: 1em">
                     Organizing Faculty
                   </h2>
                 </div>
@@ -941,10 +936,7 @@
                 style="background-color: #0e131f"
               >
                 <div class="text-center">
-                  <h2
-                    class="text-4xl font-black mb-8"
-                    style="padding-top: 1em"
-                  >
+                  <h2 class="text-4xl font-black mb-8" style="padding-top: 1em">
                     Organizing Committee
                   </h2>
                 </div>
@@ -1126,10 +1118,7 @@
                 style="background-color: #0e131f"
               >
                 <div class="text-center">
-                  <h2
-                    class="text-4xl font-black mb-8"
-                    style="padding-top: 1em"
-                  >
+                  <h2 class="text-4xl font-black mb-8" style="padding-top: 1em">
                     Evaluation Committee
                   </h2>
                 </div>
@@ -1215,10 +1204,11 @@
 
     <!-- faq -->
     <section id="faq">
-      <section class="bg-white" style="background-color: #0e131f;">
+      <section class="bg-white" style="background-color: #0e131f">
         <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <h2
-            class="mb-8 text-4xl tracking-tight font-extrabold" style="color: white;"
+            class="mb-8 text-4xl tracking-tight font-extrabold"
+            style="color: white"
           >
             Frequently asked questions
           </h2>
@@ -1228,7 +1218,8 @@
             <div>
               <div class="mb-10">
                 <h3
-                  class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+                  class="flex items-center mb-4 text-lg font-medium"
+                  style="color: white"
                 >
                   <svg
                     class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
@@ -1254,7 +1245,8 @@
               </div>
               <div class="mb-10">
                 <h3
-                  class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+                  class="flex items-center mb-4 text-lg font-medium"
+                  style="color: white"
                 >
                   <svg
                     class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
@@ -1283,7 +1275,8 @@
             <div>
               <div class="mb-10">
                 <h3
-                  class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+                  class="flex items-center mb-4 text-lg font-medium"
+                  style="color: white"
                 >
                   <svg
                     class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
@@ -1309,7 +1302,8 @@
               </div>
               <div class="mb-10">
                 <h3
-                  class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+                  class="flex items-center mb-4 text-lg font-medium"
+                  style="color: white"
                 >
                   <svg
                     class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"

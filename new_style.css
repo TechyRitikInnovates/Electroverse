@@ -202,7 +202,7 @@
 
 .responsive-map-container {
   position: relative;
-  height: 90vh;
+  height: 80vh;
   overflow: hidden;
 }
 
@@ -243,4 +243,8 @@ h2{
 
 h4{
   color: white;
+}
+
+#gallery_images img{
+  height: auto;
 }
