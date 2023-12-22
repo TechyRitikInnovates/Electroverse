@@ -119,6 +119,9 @@
   #iframe_map {
     height: 35vh;
   }
+  #venu {
+    height: 50vh;
+  }
 }
 
 .overlay-image {
@@ -182,7 +185,6 @@
 
 #footer {
   width: 100%;
-  
 }
 
 #testimonal {
@@ -217,10 +219,10 @@
   }
 }
 
-#default-tab{
-justify-content: center;
+#default-tab {
+  justify-content: center;
 }
 
-#tabs{
+#tabs {
   background-color: #0e131f;
 }
