@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Electroverse.Comm</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@themesberg/flowbite@1.2.0/dist/flowbite.min.css"
+    />
+    <link href="./new_style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- nav start -->
+    <nav
+      class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700"
+      id="nav_height"
+    >
+      <div
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        id="nav_content_height"
+      >
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img
+            src="./logo-removebg-preview.png"
+            class="h-8"
+            alt="Electroverse Logo"
+          />
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+            >Electroverse.Comm</span
+          >
+        </a>
+        <button
+          data-collapse-toggle="navbar-dropdown"
+          type="button"
+          class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+          aria-controls="navbar-dropdown"
+          aria-expanded="false"
+        >
+          <span class="sr-only">Open main menu</span>
+          <svg
+            class="w-5 h-5"
+            aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 17 14"
+          >
+            <path
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M1 1h15M1 7h15M1 13h15"
+            />
+          </svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+          <ul
+            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+          >
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >About</a
+              >
+            </li>
+            <li>
+              <button
+                id="dropdownNavbarLink"
+                data-dropdown-toggle="dropdownNavbar"
+                class="flex items-center justify-between w-full py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:w-auto dark:text-white md:dark:hover:text-blue-500 dark:focus:text-white dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+              >
+                Guidelines
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <!-- Dropdown menu -->
+              <div
+                id="dropdownNavbar"
+                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-400"
+                  aria-labelledby="dropdownLargeButton"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Brochure</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#timeline"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Timeline</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#shedule"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >Schedule</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#gallery"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >TECH-A-THON'22</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#faq"
+                      class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white"
+                      >FAQ's</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Domains</a
+              >
+            </li>
+            <li>
+              <a
+                href="mailto:pandeyritik527@gmail.com"
+                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
+                >Support</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+    <!-- Hero -->
+    <section id="home">
+      <div class="bg">
+        <div id="hero_div">
+          <div class="container_hero">
+            <p class="glitch">
+              <span aria-hidden="true">TECH-A-THON'23</span>
+              TECH-A-THON'23
+              <span aria-hidden="true">TECH-A-THON'23</span>
+            </p>
+            <p style="font-size: 1rem; color: yellow; font-weight: 600">
+              A 48 Hours Non-Stop Hardware Hackathon
+            </p>
+          </div>
+        </div>
+        <span
+          style="
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          "
+        >
+          <span class="waviy" style="margin-right: 1.5rem">
+            <span style="--i: 1">R</span>
+            <span style="--i: 2">e</span>
+            <span style="--i: 3">g</span>
+            <span style="--i: 4">i</span>
+            <span style="--i: 5">s</span>
+            <span style="--i: 6">t</span>
+            <span style="--i: 7">e</span>
+            <span style="--i: 8">r</span>
+            <span style="--i: 8">a</span>
+            <span style="--i: 8">t</span>
+            <span style="--i: 8">i</span>
+            <span style="--i: 8">o</span>
+            <span style="--i: 8">n</span>
+          </span>
+          <span class="waviy" style="margin-right: 1.5rem">
+            <span style="--i: 1">S</span>
+            <span style="--i: 2">t</span>
+            <span style="--i: 3">a</span>
+            <span style="--i: 4">r</span>
+            <span style="--i: 5">t</span>
+            <span style="--i: 6">i</span>
+            <span style="--i: 7">n</span>
+            <span style="--i: 8">g</span>
+          </span>
+          <span
+            class="waviy"
+            style="
+              margin-right: 1.5rem;
+              justify-content: center;
+              align-items: center;
+            "
+          >
+            <span style="--i: 1">S</span>
+            <span style="--i: 2">o</span>
+            <span style="--i: 3">o</span>
+            <span style="--i: 4">n</span>
+          </span>
+        </span>
+        <div class="countdown" id="countdown">
+          <div id="days" class="time"></div>
+          <div id="hours" class="time"></div>
+          <div id="minutes" class="time"></div>
+          <div id="seconds" class="time"></div>
+        </div>
+      </div>
+    </section>
+    <!-- hero end -->
+
+    <!-- about -->
+    <section id="about">
+      <section class="text-gray-400 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="text-center">
+            <h2 class="text-4xl font-black text-black mb-8 dark:text-white">
+              About Us
+            </h2>
+          </div>
+          <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
+            <p class="leading-relaxed text-lg" style="font-size: 1.5rem">
+              We, Electroverse.Comm-TSEC, A Technical Committee of the EXTC
+              Department of Thadomal Shahani Engineering College, Mumbai,
+              Maharashtra, invite you to TECH-A-THON, a 48-hour Hardware
+              Hackathon. Get ready to swirl in the Vortex of Technovation and
+              showcase your potential to offer feasible solutions for real world
+              problems with a Technical Edge.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section>
+    <hr />
+    <!-- about end-->
+
+    <!-- timeline -->
+    <section id="timeline">
+      <div class="text-center">
+        <h2
+          class="text-4xl font-black text-black mb-8 dark:text-white"
+          id="timeline_text"
+        >
+          Timeline
+        </h2>
+      </div>
+      <div class="container1">
+        <div
+          class="flex flex-col md:grid grid-cols-12 text-gray-50"
+          id="flex_timeline"
+        >
+          <div class="flex md:contents">
+            <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-green-500 pointer-events-none"></div>
+              </div>
+              <div
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-green-500 shadow text-center"
+              >
+                <i class="fas fa-check-circle text-white"></i>
+              </div>
+            </div>
+            <div
+              class="bg-green-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+            >
+              <h3 class="font-semibold text-lg mb-1" style="color: white">
+                Launch of TECH-A-THON 2023
+              </h3>
+              <p class="leading-tight text-justify w-full">Date, Time</p>
+            </div>
+          </div>
+          <div class="flex md:contents">
+            <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-red-500 pointer-events-none"></div>
+              </div>
+              <div
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-red-500 shadow text-center"
+              >
+                <i class="fas fa-check-circle text-white"></i>
+              </div>
+            </div>
+            <div
+              class="bg-red-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+            >
+              <h3 class="font-semibold text-lg mb-1">
+                Registration and Idea Submission
+              </h3>
+              <p class="leading-tight text-justify">Date, Time</p>
+            </div>
+          </div>
+          <div class="flex md:contents">
+            <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-red-500 pointer-events-none"></div>
+              </div>
+              <div
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-red-500 shadow text-center"
+              >
+                <i class="fas fa-times-circle text-white"></i>
+              </div>
+            </div>
+            <div
+              class="bg-red-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+            >
+              <h3 class="font-semibold text-lg mb-1 text-gray-50">
+                Idea and Evaluation
+              </h3>
+              <p class="leading-tight text-justify">Date, Time</p>
+            </div>
+          </div>
+          <div class="flex md:contents">
+            <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-red-500 pointer-events-none"></div>
+              </div>
+              <div
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-red-500 shadow text-center"
+              >
+                <i class="fas fa-times-circle text-white"></i>
+              </div>
+            </div>
+            <div
+              class="bg-red-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+            >
+              <h3 class="font-semibold text-lg mb-1 text-gray-50">
+                Announcement of Finalist
+              </h3>
+              <p class="leading-tight text-justify">Date, Time</p>
+            </div>
+          </div>
+          <div class="flex md:contents">
+            <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+              <div class="h-full w-6 flex items-center justify-center">
+                <div class="h-full w-1 bg-red-500 pointer-events-none"></div>
+              </div>
+              <div
+                class="w-6 h-6 absolute top-1/2 -mt-3 rounded-full bg-red-500 shadow text-center"
+              >
+                <i class="fas fa-exclamation-circle text-gray-400"></i>
+              </div>
+            </div>
+            <div
+              class="bg-red-500 col-start-4 col-end-12 p-4 rounded-xl my-4 mr-auto shadow-md w-full"
+            >
+              <h3 class="font-semibold text-lg mb-1 text-gray-50">
+                Grand Finale of the Hackathon
+              </h3>
+              <p class="leading-tight text-justify">Date, Time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- timeline end -->
+
+    <section id="venu">
+      <div class="text-center">
+        <br />
+        <br />
+        <h2 class="text-4xl font-black text-black mb-8 dark:text-white">
+          Event Venue
+        </h2>
+      </div>
+      <div class="responsive-map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.983463068894!2d72.83328527520504!3d19.064464682137718!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c91130392c07%3A0x3c47bf391c8de931!2sThadomal%20Shahani%20Engineering%20College!5e0!3m2!1sen!2sin!4v1703082739975!5m2!1sen!2sin"
+          id="iframe_map"
+        ></iframe>
+      </div>
+    </section>
+    <hr />
+    <!-- event Venu end-->
+
+    <!-- gallery -->
+    <section id="gallery">
+      <div class="container px-5 py-6 mx-auto">
+        <div class="text-center">
+          <h2 class="text-4xl font-black text-black mb-8 dark:text-white">
+            TECH-A-THON'22
+          </h2>
+        </div>
+        <section class="text-gray-400 body-font">
+          <div class="container px-5 py-10 mx-auto">
+            <div class="flex flex-wrap -m-4 text-center">
+              <div class="p-4 sm:w-1/4 w-1/2">
+                <h2
+                  class="title-font font-medium sm:text-4xl text-3xl text-white"
+                >
+                  1000+
+                </h2>
+                <p class="leading-relaxed">No. of Participants</p>
+              </div>
+              <div class="p-4 sm:w-1/4 w-1/2">
+                <h2
+                  class="title-font font-medium sm:text-4xl text-3xl text-white"
+                >
+                  200+
+                </h2>
+                <p class="leading-relaxed">No. of Teams Participated</p>
+                <p></p>
+              </div>
+
+              <div class="p-4 sm:w-1/4 w-1/2">
+                <h2
+                  class="title-font font-medium sm:text-4xl text-3xl text-white"
+                >
+                  50
+                </h2>
+                <p class="leading-relaxed">No. of Team Shortlisted</p>
+              </div>
+              <div class="p-4 sm:w-1/4 w-1/2">
+                <h2
+                  class="title-font font-medium sm:text-4xl text-3xl text-white"
+                >
+                  50000
+                </h2>
+                <p class="leading-relaxed">Price Pool</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div
+          id="default-carousel"
+          class="relative w-full"
+          data-carousel="slide"
+        >
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="/DSC_0153 (1).JPG"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="/IMG_0991.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="/IMG_0994.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="/IMG_1105.jpg"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="/IMG_6333.JPG"
+                class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <div
+            class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="true"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 4"
+              data-carousel-slide-to="3"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 5"
+              data-carousel-slide-to="4"
+            ></button>
+          </div>
+          <button
+            type="button"
+            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M5 1 1 5l4 4"
+                />
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 6 10"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m1 9 4-4-4-4"
+                />
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- gallery end-->
+
+    <!-- testimonials -->
+    <section id="tabs">
+      <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+        <ul
+          class="flex flex-wrap -mb-px text-sm font-medium text-center"
+          id="default-tab"
+          data-tabs-toggle="#default-tab-content"
+          role="tablist"
+        >
+          <li class="me-2" role="presentation">
+            <button
+              class="inline-block p-4 border-b-2 rounded-t-lg"
+              id="profile-tab"
+              data-tabs-target="#profile"
+              type="button"
+              role="tab"
+              aria-controls="profile"
+              aria-selected="false"
+            >
+              Organizing Faculty
+            </button>
+          </li>
+          <li class="me-2" role="presentation">
+            <button
+              class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              id="dashboard-tab"
+              data-tabs-target="#dashboard"
+              type="button"
+              role="tab"
+              aria-controls="dashboard"
+              aria-selected="false"
+            >
+              Organizing Committee
+            </button>
+          </li>
+          <li class="me-2" role="presentation">
+            <button
+              class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
+              id="settings-tab"
+              data-tabs-target="#settings"
+              type="button"
+              role="tab"
+              aria-controls="settings"
+              aria-selected="false"
+            >
+              Evaluation Committee
+            </button>
+          </li>
+        </ul>
+      </div>
+      <div id="default-tab-content">
+        <div
+          class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+          id="profile"
+          role="tabpanel"
+          aria-labelledby="profile-tab"
+          style="background-color: #0e131f"
+        >
+          <!-- tab1 -->
+          <section id="testimonial">
+            <div id="committee">
+              <div
+                class="bg-white dark:text-gray-100"
+                style="background-color: #0e131f"
+              >
+                <div class="text-center">
+                  <h2
+                    class="text-4xl font-black text-black mb-8 dark:text-white"
+                    style="padding-top: 1em"
+                  >
+                    Organizing Faculty
+                  </h2>
+                </div>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-8 md:gap-16 text-center"
+                >
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./Manoj.jpeg"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">G.T. Thampi</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      Principle
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-8 md:gap-16 text-center"
+                >
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./Manoj.jpeg"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">Maniroja Edinburgh</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      HOD EXTC
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-16 text-center"
+                >
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./Manoj.jpeg"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">Manoj Kavedia</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      Assistant Professor
+                    </p>
+                  </div>
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./uttra.png"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">Uttra Bhatt</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      Assistant Professor
+                    </p>
+                  </div>
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./jyoti.jpeg"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">Jyoti Kashyap</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      Assistant Professor
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+          id="dashboard"
+          role="tabpanel"
+          aria-labelledby="dashboard-tab"
+          style="background-color: #0e131f"
+        >
+          <!-- tab2 -->
+          <section id="testimonial">
+            <div id="committee">
+              <div
+                class="bg-white dark:text-gray-100"
+                style="background-color: #0e131f"
+              >
+                <div class="text-center">
+                  <h2
+                    class="text-4xl font-black text-black mb-8 dark:text-white"
+                    style="padding-top: 1em"
+                  >
+                    Organizing Committee
+                  </h2>
+                </div>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-8 md:gap-16 text-center"
+                >
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./Manoj.jpeg"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">G.T. Thampi</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      Principle
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-8 md:gap-16 text-center"
+                >
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./Manoj.jpeg"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">Maniroja Edinburgh</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      HOD EXTC
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-16 text-center"
+                >
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./Manoj.jpeg"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">Manoj Kavedia</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      Assistant Professor
+                    </p>
+                  </div>
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./uttra.png"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">Uttra Bhatt</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      Assistant Professor
+                    </p>
+                  </div>
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./jyoti.jpeg"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">Jyoti Kashyap</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      Assistant Professor
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+          id="settings"
+          role="tabpanel"
+          aria-labelledby="settings-tab"
+          style="background-color: #0e131f"
+        >
+          <!-- tab3 -->
+          <section id="testimonial">
+            <div id="committee">
+              <div
+                class="bg-white dark:text-gray-100"
+                style="background-color: #0e131f"
+              >
+                <div class="text-center">
+                  <h2
+                    class="text-4xl font-black text-black mb-8 dark:text-white"
+                    style="padding-top: 1em"
+                  >
+                    Evaluation Committee
+                  </h2>
+                </div>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-8 md:gap-16 text-center"
+                >
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./Manoj.jpeg"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">G.T. Thampi</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      Principle
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-8 md:gap-16 text-center"
+                >
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./Manoj.jpeg"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">Maniroja Edinburgh</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      HOD EXTC
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-16 text-center"
+                >
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./Manoj.jpeg"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">Manoj Kavedia</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      Assistant Professor
+                    </p>
+                  </div>
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./uttra.png"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">Uttra Bhatt</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      Assistant Professor
+                    </p>
+                  </div>
+                  <div>
+                    <span
+                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
+                    >
+                      <img
+                        src="./jyoti.jpeg"
+                        alt="User Avatar"
+                        class="inline-block w-28 h-28 rounded-full"
+                      />
+                    </span>
+                    <h4 class="text-xl font-bold mb-0.5">Jyoti Kashyap</h4>
+                    <p
+                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
+                    >
+                      Assistant Professor
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div
+          class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
+          id="contacts"
+          role="tabpanel"
+          aria-labelledby="contacts-tab"
+          style="background-color: #0e131f"
+        >
+          <p class="text-sm text-gray-500 dark:text-gray-400">
+            This is some placeholder content the
+            <strong class="font-medium text-gray-800 dark:text-white"
+              >Contacts tab's associated content</strong
+            >. Clicking another tab will toggle the visibility of this one for
+            the next. The tab JavaScript swaps classes to control the content
+            visibility and styling.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- testimonial end -->
+
+    <!-- faq -->
+    <section id="faq">
+      <section class="bg-white dark:bg-gray-900">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+          <h2
+            class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+          >
+            Frequently asked questions
+          </h2>
+          <div
+            class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-gray-700 md:grid-cols-2"
+          >
+            <div>
+              <div class="mb-10">
+                <h3
+                  class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+                >
+                  <svg
+                    class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  How can I participate in TECH-A-THON?
+                </h3>
+                <p class="text-gray-500 dark:text-gray-400">
+                  To participate, you need to register on Electroverse.Comm's
+                  website during the registration period. Keep an eye on the
+                  official communication channels for announcements regarding
+                  registration dates and requirements. Space is limited, so
+                  early registration is recommended.
+                </p>
+              </div>
+              <div class="mb-10">
+                <h3
+                  class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+                >
+                  <svg
+                    class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  Are there any prerequisites for participation?
+                </h3>
+                <p class="text-gray-500 dark:text-gray-400">
+                  While there are no strict prerequisites, participants are
+                  encouraged to have a basic understanding of hardware
+                  development, programming, and problem-solving. Teams with
+                  diverse skill sets often perform well. Bring your own hardware
+                  tools and equipment, as the event will provide a platform for
+                  hands-on experimentation.
+                </p>
+              </div>
+            </div>
+            <div>
+              <div class="mb-10">
+                <h3
+                  class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+                >
+                  <svg
+                    class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  When and where will TECH-A-THON take place?
+                </h3>
+                <p class="text-gray-500 dark:text-gray-400">
+                  TECH-A-THON will be held offline for 48 hours at a designated
+                  venue. The date, time, and location will be communicated to
+                  registered participants well in advance. Make sure to stay
+                  tuned for updates and announcements on Electroverse.Comm's
+                  official channels.
+                </p>
+              </div>
+              <div class="mb-10">
+                <h3
+                  class="flex items-center mb-4 text-lg font-medium text-gray-900 dark:text-white"
+                >
+                  <svg
+                    class="flex-shrink-0 mr-2 w-5 h-5 text-gray-500 dark:text-gray-400"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  What are the judging criteria and prizes for TECH-A-THON?
+                </h3>
+                <p class="text-gray-500 dark:text-gray-400">
+                  Projects will be evaluated based on innovation, functionality,
+                  feasibility, and presentation. A panel of expert judges will
+                  assess the projects, and winners will be announced at the
+                  conclusion of the event. Exciting prizes, including cash
+                  awards, mentorship opportunities, and recognition in the tech
+                  community, await the top-performing teams. Stay motivated,
+                  collaborate effectively, and showcase your creativity to
+                  maximize your chances of success!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- faq end -->
+
+    <!-- footer -->
+    <footer class="text-gray-400 bg-gray-900 body-font" id="footer">
+      <div
+        class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col"
+      >
+        <a
+          class="flex title-font font-medium items-center md:justify-start justify-center text-white"
+        >
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img
+              src="./logo-removebg-preview.png"
+              class="h-8"
+              alt="Electroverse Logo"
+            />
+            <span class="ml-3 text-xl">Electroverse.Comm</span>
+          </a>
+        </a>
+        <p
+          class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4"
+        >
+          © 2023 TECH-A-THON
+        </p>
+        <span
+          class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+        >
+          <a class="text-gray-400">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              data-darkreader-inline-fill=""
+              style="--darkreader-inline-fill: currentColor"
+            >
+              <path
+                d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              data-darkreader-inline-fill=""
+              style="--darkreader-inline-fill: currentColor"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              data-darkreader-inline-stroke=""
+              style="--darkreader-inline-stroke: currentColor"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path
+                d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+              ></path>
+            </svg>
+          </a>
+          <a class="ml-3 text-gray-400">
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-5 h-5"
+              viewBox="0 0 24 24"
+              data-darkreader-inline-fill=""
+              data-darkreader-inline-stroke=""
+              style="
+                --darkreader-inline-fill: currentColor;
+                --darkreader-inline-stroke: currentColor;
+              "
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                data-darkreader-inline-stroke=""
+                style="--darkreader-inline-stroke: none"
+              ></path>
+              <circle
+                cx="4"
+                cy="4"
+                r="2"
+                stroke="none"
+                data-darkreader-inline-stroke=""
+                style="--darkreader-inline-stroke: none"
+              ></circle>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- scripts -->
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script>
+    <script src="node_modules/@material-tailwind/html/scripts/tabs.js"></script>
+    <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/tabs.js"></script>
+  </body>
+</html>
