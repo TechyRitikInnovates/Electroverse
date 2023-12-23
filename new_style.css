@@ -15,6 +15,7 @@
 }
 
 .glitch {
+  display: flex;
   font-size: 5rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -105,9 +106,9 @@
   font-size: 1.5em;
 }
 
-#flex_timeline {
+/* #flex_timeline {
   position: relative;
-}
+} */
 
 @media (max-width: 768px) {
   .responsive-map-container {
@@ -334,8 +335,19 @@ h4{
 #side_by_side{
   display: flex;
   justify-content: center;
+  text-wrap: nowrap;
+  text-align: center;
 }
 
 #side_by_side h2{
   margin-right: 1rem;
 }
+
+.about_img{
+  padding: 1.3em;
+  padding-top: 0;
+  position: relative;
+  border-radius: 20px;
+  height: auto;
+}
+

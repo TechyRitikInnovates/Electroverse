@@ -250,31 +250,103 @@
           <div class="xl:w-1/2 lg:w-3/4 w-full mx-auto text-center">
             <div id="slideshow-container">
               <div class="slide" id="techathon">
-                <div class="text-center" id="side_by_side">
+                <div id="side_by_side">
                   <h2 class="text-4xl font-black mb-8">About</h2>
                   <h2 class="text-4xl font-black mb-8">TECH-A-THON</h2>
                 </div>
+                <div id="about_img_container"
+                >
+                  <img class="about_img"
+                    src="./tsec.webp"
+                  />
+                </div>
                 <p>
-                  Exciting tech competition bringing together innovative minds.
+                  Thadomal Shahani Engineering College (TSEC) is a prominent
+                  institution in Mumbai, housing Electroverse.Comm-TSEC, a
+                  Technical Committee associated with the Electronics and
+                  Telecommunication Department. This committee orchestrates
+                  TECH-A-THON, a 48-hour Hardware Hackathon, offering students a
+                  platform to showcase innovative solutions to real-world
+                  problems with a technical edge. The event, promoting
+                  collaboration and creativity, encourages participants to
+                  engage in the Vortex of Technovation, fostering a culture of
+                  exploration and excellence within the TSEC community.
+                  TECH-A-THON not only serves as a competition but also
+                  facilitates learning, networking, and collaboration among
+                  students, industry professionals, and experts. The hackathon
+                  aligns with TSEC's commitment to holistic education,
+                  empowering students to be innovative leaders in the evolving
+                  realm of engineering and technology.
                 </p>
               </div>
-
               <div class="slide" id="college">
                 <div class="text-center" id="side_by_side">
                   <h2 class="text-4xl font-black mb-8">About</h2>
                   <h2 class="text-4xl font-black mb-8">College</h2>
                 </div>
-                <p>Your College Name - Where knowledge meets opportunity.</p>
+                <div
+                >
+                  <img class="about_img"
+                    src="./extc_department.jpg"
+                  />
+                </div>
+                <p>
+                  Thadomal Shahani Engineering College (TSEC) is a private
+                  engineering college located in Mumbai, India, established in
+                  1983 by the Hyderabad (Sind) National Collegiate Board (HSNC
+                  Board). It is the first and oldest private engineering
+                  institute affiliated with the University of Mumbai. Approved
+                  by the Directorate of Technical Education of Maharashtra in
+                  1983, TSEC is one of India's oldest private engineering
+                  colleges. It pioneered undergraduate-level studies in fields
+                  such as computer engineering, information technology, and
+                  biomedical engineering. The Department of Biomedical
+                  Engineering, founded in 1983, is one of the oldest in India.
+                  TSEC introduced Computer Engineering in 1988, Information
+                  Technology in 1998, and later established departments like
+                  Electronics & Telecommunication Engineering, Chemical
+                  Engineering (1983), and Biotechnology (2004). In 2020, the
+                  college initiated an undergraduate course in Artificial
+                  Intelligence and Data Science. The college is named after
+                  Thadomal Shahani, a respected philanthropist in Mumbai.
+                </p>
               </div>
-
               <div class="slide" id="department">
                 <div class="text-center" id="side_by_side">
                   <h2 class="text-4xl font-black mb-8">About</h2>
                   <h2 class="text-4xl font-black mb-8">Department</h2>
                 </div>
+                <div class="about_img"
+                >
+                  <img
+                    src="./about_techathon.png"
+                  />
+                </div>
                 <p>
-                  Your Department - Shaping the future through education and
-                  research.
+                  Department of Electronics and Telecommunication was
+                  established in year 2002 with a clear view of a forerunner in
+                  the field of Telecommunications, the Department seeks to
+                  evolve towards excellence and adapt itself to the rapid
+                  advancements in specialized communication related fields. This
+                  Department earlier had nomenclature of Electronics Engineering
+                  from 1983 to 2001. From 2002 Student intake for E&TC has been
+                  60 students. At the desktop of achievements of the department,
+                  lies the award of accreditation given by the National Board of
+                  Accreditation since 2008. The Department is accredited by NBA
+                  continuously for the past 4 cycles and recently by NAAC. The
+                  department has also started a PhD program, with an intake of
+                  10 students from the academic year 2014-15. The curriculum of
+                  the program has been designed to cater to the ever changing
+                  needs and demands of communication industry. The focus is on
+                  holistic learning and empowering students to make significant
+                  contributions at all levels. The open elective system gives a
+                  handful of choices for students to develop expertise in their
+                  area of interest such as Neural Networks, Radar engineering,
+                  VLSI, Data compression and encryption, Satellite
+                  communication, Image processing, Artificial Intelligence, and
+                  Machine Learning etc. It has one of the best state-of-the-art
+                  hard ware and software laboratories with special focus on
+                  telecommunication.
                 </p>
               </div>
             </div>
@@ -282,7 +354,6 @@
         </div>
       </section>
     </section>
-    <hr />
     <!-- about end-->
 
     <!-- domains -->
@@ -407,8 +478,6 @@
     </section>
     <!-- domains end -->
 
-    <hr />
-
     <!-- timeline -->
     <section id="timeline">
       <div class="text-center">
@@ -417,7 +486,6 @@
       <div class="container1">
         <div
           class="flex flex-col md:grid grid-cols-12 text-gray-50"
-          id="flex_timeline"
         >
           <div class="flex md:contents">
             <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
@@ -522,9 +590,9 @@
         </div>
       </div>
     </section>
-    <hr />
     <!-- timeline end -->
 
+    <!-- venu start -->
     <section id="venu">
       <div class="text-center">
         <br />
@@ -545,7 +613,6 @@
         </div>
       </div>
     </section>
-    <hr />
     <!-- event Venu end-->
 
     <!-- gallery -->
@@ -800,19 +867,6 @@
               aria-selected="false"
             >
               <a>Organizing Committee</a>
-            </button>
-          </li>
-          <li class="me-2" role="presentation">
-            <button
-              class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300"
-              id="settings-tab"
-              data-tabs-target="#settings"
-              type="button"
-              role="tab"
-              aria-controls="settings"
-              aria-selected="false"
-            >
-              <a>Evaluation Committee</a>
             </button>
           </li>
         </ul>
@@ -1127,96 +1181,9 @@
           aria-labelledby="settings-tab"
           style="background-color: #0e131f"
         >
-          <!-- tab3 -->
-          <section id="testimonial">
-            <div id="committee">
-              <div
-                class="bg-white dark:text-gray-100"
-                style="background-color: #0e131f"
-              >
-                <div class="text-center">
-                  <h2 class="text-4xl font-black mb-8" style="padding-top: 1em">
-                    Evaluation Committee
-                  </h2>
-                </div>
-                <div
-                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 md:gap-16 text-center"
-                >
-                  <div>
-                    <span
-                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
-                    >
-                      <img
-                        src="./jyoti.jpeg"
-                        alt="User Avatar"
-                        class="inline-block w-28 h-28 rounded-full"
-                      />
-                    </span>
-                    <h4 class="text-xl font-bold mb-0.5">Name1</h4>
-                    <p
-                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
-                    >
-                      Designation
-                    </p>
-                  </div>
-                  <div>
-                    <span
-                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
-                    >
-                      <img
-                        src="./jyoti.jpeg"
-                        alt="User Avatar"
-                        class="inline-block w-28 h-28 rounded-full"
-                      />
-                    </span>
-                    <h4 class="text-xl font-bold mb-0.5">Name2</h4>
-                    <p
-                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
-                    >
-                      Designation
-                    </p>
-                  </div>
-                  <div>
-                    <span
-                      class="inline-block rounded-full bg-white shadow-lg p-2 mb-5 dark:bg-gray-700/75 dark:shadow-gray-950"
-                    >
-                      <img
-                        src="./jyoti.jpeg"
-                        alt="User Avatar"
-                        class="inline-block w-28 h-28 rounded-full"
-                      />
-                    </span>
-                    <h4 class="text-xl font-bold mb-0.5">Name3</h4>
-                    <p
-                      class="font-medium text-gray-600 dark:text-gray-400 mb-5"
-                    >
-                      Designation
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </div>
-        <div
-          class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800"
-          id="contacts"
-          role="tabpanel"
-          aria-labelledby="contacts-tab"
-          style="background-color: #0e131f"
-        >
-          <p class="text-sm text-gray-500 dark:text-gray-400">
-            This is some placeholder content the
-            <strong class="font-medium text-gray-800 dark:text-white"
-              >Contacts tab's associated content</strong
-            >. Clicking another tab will toggle the visibility of this one for
-            the next. The tab JavaScript swaps classes to control the content
-            visibility and styling.
-          </p>
         </div>
       </div>
     </section>
-    <hr />
     <!-- testimonial end -->
 
     <!-- faq -->
