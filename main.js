@@ -45,3 +45,6 @@ let currentSlide = 0;
 
   setInterval(nextSlide, 5000); // Change slide every 3 seconds
   showSlide(currentSlide);
+
+
+  
